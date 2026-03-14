@@ -41,6 +41,8 @@ Why I execute both `bcdedit /set {badmemory} badmemorylist ...` and `bcdedit /se
 5. Another console should popup with success information.
 6. **Restart your computer.**
 
+![Showcase](screenshots/found_adresses.png)
+
 ---
 
 ## 🔍 How to Verify the Fix
@@ -55,7 +57,7 @@ We can use a tool called **RAMMap** to verify that Windows is actually ignoring 
 ![RAMMap Verification](screenshots/visible_splitted_adresses.png)
 
 
-Some searchability tags idk if they heplp:
+Some searchability tags idk if they help:
 "How to fix RAM errors without buying new memory"
 "Fix Windows crashing after MemTest86 errors"
 "Bypass bad RAM sectors in Windows 10/11"
