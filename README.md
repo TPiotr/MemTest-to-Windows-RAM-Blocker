@@ -53,3 +53,10 @@ We can use a tool called **RAMMap** to verify that Windows is actually ignoring 
 4. You should see that your RAM ranges are now split. For example, if you blocked a small section of memory, you will see two separate ranges of "Available" memory with a gap between them where your faulty addresses used to be.
 
 ![RAMMap Verification](screenshots/visible_splitted_adresses.png)
+
+
+Some searchability tags idk if they heplp:
+"How to fix RAM errors without buying new memory"
+"Fix Windows crashing after MemTest86 errors"
+"Bypass bad RAM sectors in Windows 10/11"
+"Automated badmemorylist script"
