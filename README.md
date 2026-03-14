@@ -13,6 +13,8 @@ Automates the process of parsing MemTest86 logs and executing the `bcdedit` comm
 
 ![Showcase](screenshots/found_adresses.png)
 
+Why I execute both `bcdedit /set {badmemory} badmemorylist ...` and `bcdedit /set badmemorylist ...`? While researching this problem, I noticed that most guides only mention the first command. However, I stumbled upon a comment suggesting the second variation, and in my specific case, only the second one actually worked. This likely depends on your specific Windows version or BCD configuration. Executing both costs nothing and increases the chance this will work at all. 
+
 ## What you need
 1. USB drive
 2. Admin privileges on your machine
@@ -49,4 +51,5 @@ We can use a tool called **RAMMap** to verify that Windows is actually ignoring 
 2. Open the app and go to the **"Physical Ranges"** tab.
 3. Look for the address ranges that match your blocked faulty addresses.
 4. You should see that your RAM ranges are now split. For example, if you blocked a small section of memory, you will see two separate ranges of "Available" memory with a gap between them where your faulty addresses used to be.
+
 ![RAMMap Verification](screenshots/visible_splitted_adresses.png)
